@@ -1,0 +1,180 @@
+site_name: Herald Documentation
+site_description: Advanced Discord bot for Hunter The Reckoning 5th Edition
+site_author: Herald Bot
+site_url: https://Mashbybot.github.io/herald-docs/  # Update with your GitHub username
+
+# Repository
+repo_name: Mashbybot/herald  # Update with your repo name
+repo_url: https://github.com/Mashbybot/herald  # Update with your repo URL
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2025 Herald Bot - Hunter The Reckoning 5E
+
+# Theme Configuration
+theme:
+  name: material
+  
+  # Colors - Hunter aesthetic (dark theme with red accents)
+  palette:
+    # Dark mode (default)
+    - scheme: slate
+      primary: red
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Light mode
+    - scheme: default
+      primary: red
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  
+  # Fonts
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+  # Features
+  features:
+    - navigation.instant        # Instant loading
+    - navigation.tracking       # URL updates with scroll
+    - navigation.tabs           # Top-level tabs
+    - navigation.tabs.sticky    # Sticky tabs
+    - navigation.sections       # Navigation sections
+    - navigation.expand         # Expand sections by default
+    - navigation.top            # Back to top button
+    - navigation.footer         # Footer navigation
+    - search.suggest            # Search suggestions
+    - search.highlight          # Highlight search terms
+    - search.share              # Share search results
+    - toc.follow                # TOC follows scroll
+    - content.code.copy         # Copy code blocks
+    - content.code.annotate     # Code annotations
+  
+  # Logo and favicon
+  icon:
+    logo: material/bow-arrow
+    repo: fontawesome/brands/github
+  
+  # Custom 404 page
+  static_templates:
+    - 404.html
+
+# Extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+# Additional CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Social Links
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/9bEZk6ARG9
+      name: Support Server
+    - icon: fontawesome/brands/github
+      link: https://github.com/Mashbybot/herald
+      name: GitHub Repository
+  
+  # Analytics (optional - add later)
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  
+  - Getting Started:
+    - Quick Start: guides/quickstart.md
+    - Adding Herald: guides/adding-herald.md
+    - First Character: guides/first-character.md
+    - Basic Rolling: guides/basic-rolling.md
+  
+  - Guides:
+    - Character Creation: guides/character-creation.md
+    - Character Management: guides/character-management.md
+    - Dice Rolling: guides/dice-rolling.md
+    - Edge & Desperation: guides/edge-desperation.md
+    - Skills & Specialties: guides/skills-specialties.md
+    - Experience System: guides/experience.md
+    - Hunter Mechanics: guides/hunter-mechanics.md
+    - Equipment & Notes: guides/equipment-notes.md
+  
+  - Command Reference:
+    - Overview: commands/index.md
+    - Character Commands: commands/character.md
+    - Dice Commands: commands/dice.md
+    - Development Commands: commands/development.md
+    - Hunter Mechanics: commands/hunter.md
+    - Utility Commands: commands/utility.md
+  
+  - H5E Integration:
+    - Understanding H5E: h5e/overview.md
+    - Attributes & Skills: h5e/attributes-skills.md
+    - Dice Mechanics: h5e/dice-mechanics.md
+    - Edge System: h5e/edge.md
+    - Desperation: h5e/desperation.md
+    - Creeds: h5e/creeds.md
+    - Character Progression: h5e/progression.md
+  
+  - Server Administration:
+    - Setup Guide: admin/setup.md
+    - Best Practices: admin/best-practices.md
+    - Troubleshooting: admin/troubleshooting.md
+  
+  - Support:
+    - FAQ: support/faq.md
+    - Common Issues: support/common-issues.md
+    - Getting Help: support/getting-help.md
+    - Contributing: support/contributing.md

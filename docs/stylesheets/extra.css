@@ -1,0 +1,142 @@
+/* Herald Documentation Custom Styles */
+/* Hunter: The Reckoning themed CSS */
+
+:root {
+  --hunter-red: #8B0000;
+  --hunter-gold: #FFD700;
+  --hunter-dark: #1a1a1a;
+}
+
+/* Custom admonition colors for Hunter theme */
+.md-typeset .admonition.hunter,
+.md-typeset details.hunter {
+  border-color: var(--hunter-red);
+}
+
+.md-typeset .hunter > .admonition-title,
+.md-typeset .hunter > summary {
+  background-color: rgba(139, 0, 0, 0.1);
+  border-color: var(--hunter-red);
+}
+
+.md-typeset .hunter > .admonition-title::before,
+.md-typeset .hunter > summary::before {
+  background-color: var(--hunter-red);
+}
+
+/* Command code blocks styling */
+.md-typeset code {
+  background-color: rgba(139, 0, 0, 0.1);
+  border: 1px solid rgba(139, 0, 0, 0.2);
+}
+
+/* Grid cards (for homepage) */
+.md-typeset .grid {
+  grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  margin: 1em 0;
+}
+
+.md-typeset .grid.cards > * {
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  display: block;
+  padding: 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.md-typeset .grid.cards > *:hover {
+  border-color: var(--hunter-red);
+  box-shadow: 0 0.2rem 0.5rem rgba(139, 0, 0, 0.2);
+}
+
+/* Custom table styling */
+.md-typeset table:not([class]) {
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: rgba(139, 0, 0, 0.1);
+  border-bottom: 0.1rem solid var(--hunter-red);
+  font-weight: 700;
+}
+
+/* Hero section on homepage */
+.md-typeset h1:first-child {
+  color: var(--hunter-red);
+  font-weight: 700;
+}
+
+/* Command reference tables */
+.md-typeset .command-table {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.85em;
+}
+
+/* Dice result examples */
+.dice-example {
+  background-color: rgba(139, 0, 0, 0.05);
+  border-left: 0.2rem solid var(--hunter-red);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.2rem;
+}
+
+/* Navigation tabs */
+.md-tabs {
+  background-color: var(--hunter-dark);
+}
+
+/* Links in dark mode */
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #ff6b6b;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: var(--hunter-gold);
+}
+
+/* Custom scrollbar for dark mode */
+[data-md-color-scheme="slate"]::-webkit-scrollbar-thumb {
+  background-color: var(--hunter-red);
+}
+
+/* Warning/Danger boxes */
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: #ff0000;
+}
+
+/* Success boxes */
+.md-typeset .admonition.success,
+.md-typeset details.success {
+  border-color: #00ff00;
+}
+
+/* Code block headers */
+.md-typeset .highlight .filename {
+  background-color: rgba(139, 0, 0, 0.2);
+  color: var(--hunter-gold);
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+
+/* Footer styling */
+.md-footer {
+  background-color: var(--hunter-dark);
+}
+
+/* Search highlighting */
+.md-search-result__article--document {
+  border-left: 0.2rem solid var(--hunter-red);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset .grid {
+    grid-template-columns: 1fr;
+  }
+}
