@@ -10,8 +10,7 @@ Click the invite link below to add Herald to your server:
 
 **[Invite Herald to Your Server](https://discord.com/oauth2/authorize?client_id=1388202365198270595)**
 
-!!! warning "Update Invite Link"
-    Server administrators: Update the `YOUR_BOT_ID` in the link above with your actual bot's client ID from the Discord Developer Portal.
+
 
 ---
 
