@@ -1,10 +1,10 @@
 # Herald Documentation
 
-Official documentation for [Herald](https://github.com/yourusername/herald), the Discord bot for Hunter: The Reckoning 5th Edition.
+Official documentation for [Herald](https://github.com/Mashbybot/herald), the Discord bot for Hunter: The Reckoning 5th Edition.
 
 ## 🌐 View the Docs
 
-**Live Documentation:** https://yourusername.github.io/herald-docs/
+**Live Documentation:** https://Mashbybot.github.io/herald-docs/
 
 ## 📝 About
 
@@ -100,7 +100,7 @@ This documentation is licensed under MIT License - see the LICENSE file for deta
 
 ## 🔗 Links
 
-- **Herald Bot:** https://github.com/yourusername/herald
+- **Herald Bot:** https://github.com/Mashbybot/herald
 - **Support Server:** https://discord.gg/9bEZk6ARG9
 - **MkDocs Material:** https://squidfunk.github.io/mkdocs-material/
 
