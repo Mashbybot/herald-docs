@@ -1,0 +1,3420 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Advanced Discord bot for Hunter The Reckoning 5th Edition">
+      
+      
+        <meta name="author" content="Herald Bot">
+      
+      
+        <link rel="canonical" href="https://Mashbybot.github.io/herald-docs/h5e/attributes-skills/">
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../dice-mechanics/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Attributes & Skills - Herald Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#attributes-skills" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Herald Documentation" class="md-header__button md-logo" aria-label="Herald Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.03 6.03 20 7l2-5-5 2 .97.97-1.82 1.82C10.87 2.16 3.3 3.94 2.97 4L2 4.26l.5 1.94.79-.2 6.83 6.82L6.94 16H5l-3 3 2 1 1 2 3-3v-1.94l3.18-3.18L18 20.71l-.19.79 1.93.5.26-.97c.06-.33 1.84-7.9-2.79-13.18zM4.5 5.78c2.05-.28 6.78-.5 10.23 2.43l-3.91 3.91zM18.22 19.5l-6.34-6.32 3.91-3.91c2.93 3.45 2.71 8.18 2.43 10.23"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Herald Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Attributes & Skills
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Mashbybot/herald" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Mashbybot/herald
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guides/quickstart/" class="md-tabs__link">
+          
+  
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guides/character-creation/" class="md-tabs__link">
+          
+  
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../commands/" class="md-tabs__link">
+          
+  
+  
+  Command Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  
+  H5E Integration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../admin/setup/" class="md-tabs__link">
+          
+  
+  
+  Server Administration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../support/faq/" class="md-tabs__link">
+          
+  
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Herald Documentation" class="md-nav__button md-logo" aria-label="Herald Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.03 6.03 20 7l2-5-5 2 .97.97-1.82 1.82C10.87 2.16 3.3 3.94 2.97 4L2 4.26l.5 1.94.79-.2 6.83 6.82L6.94 16H5l-3 3 2 1 1 2 3-3v-1.94l3.18-3.18L18 20.71l-.19.79 1.93.5.26-.97c.06-.33 1.84-7.9-2.79-13.18zM4.5 5.78c2.05-.28 6.78-.5 10.23 2.43l-3.91 3.91zM18.22 19.5l-6.34-6.32 3.91-3.91c2.93 3.45 2.71 8.18 2.43 10.23"/></svg>
+
+    </a>
+    Herald Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Mashbybot/herald" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Mashbybot/herald
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/adding-herald/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding Herald
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/first-character/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Character
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/basic-rolling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Rolling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/character-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Character Creation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/character-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Character Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/dice-rolling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dice Rolling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/edge-desperation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edge & Desperation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/skills-specialties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skills & Specialties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/experience/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experience System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/hunter-mechanics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hunter Mechanics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/equipment-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipment & Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Command Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/character/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Character Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/dice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dice Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/hunter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hunter Mechanics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/utility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    H5E Integration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    H5E Integration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Understanding H5E
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attributes & Skills
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attributes & Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-attributes-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding Attributes &amp; Skills
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Attributes &amp; Skills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-basic-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Basic Formula
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes-vs-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributes vs. Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-9-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 9 Attributes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The 9 Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#physical-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Social Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mental-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mental Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-27-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 27 Skills
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The 27 Skills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#physical-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Social Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mental-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mental Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-attributes-skills-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Attributes &amp; Skills Together
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Attributes &amp; Skills Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-dice-pools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Dice Pools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attribute-only-rolls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attribute-Only Rolls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-creation-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Character Creation Tips
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Character Creation Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#balanced-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balanced Characters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specialized-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specialized Characters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improving-attributes-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Improving Attributes &amp; Skills
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Improving Attributes &amp; Skills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Costs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improving-in-herald" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Improving in Herald
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specialties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specialties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specialties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-specialties-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Specialties Work
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-specialties-in-herald" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Specialties in Herald
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#all-9-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        All 9 Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-27-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        All 27 Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dice-mechanics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dice Mechanics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edge System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../desperation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desperation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creeds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creeds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../progression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Character Progression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Server Administration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Server Administration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/best-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/common-issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-attributes-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding Attributes &amp; Skills
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Attributes &amp; Skills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-basic-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Basic Formula
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes-vs-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributes vs. Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-9-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 9 Attributes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The 9 Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#physical-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Social Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mental-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mental Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-27-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 27 Skills
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The 27 Skills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#physical-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Social Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mental-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mental Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-attributes-skills-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Attributes &amp; Skills Together
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Attributes &amp; Skills Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-dice-pools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Dice Pools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attribute-only-rolls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attribute-Only Rolls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-creation-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Character Creation Tips
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Character Creation Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#balanced-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Balanced Characters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specialized-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specialized Characters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improving-attributes-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Improving Attributes &amp; Skills
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Improving Attributes &amp; Skills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Costs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improving-in-herald" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Improving in Herald
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specialties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specialties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specialties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-specialties-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Specialties Work
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-specialties-in-herald" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Specialties in Herald
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#all-9-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        All 9 Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-27-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        All 27 Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="attributes-skills">Attributes &amp; Skills<a class="headerlink" href="#attributes-skills" title="Permanent link">&para;</a></h1>
+<p>Attributes and Skills form the foundation of your Hunter character. Together, they determine your dice pools for all actions in Hunter: The Reckoning 5E.</p>
+<hr />
+<h2 id="understanding-attributes-skills">Understanding Attributes &amp; Skills<a class="headerlink" href="#understanding-attributes-skills" title="Permanent link">&para;</a></h2>
+<h3 id="the-basic-formula">The Basic Formula<a class="headerlink" href="#the-basic-formula" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Attribute + Skill + Modifiers = Dice Pool
+</span></code></pre></div>
+<p><strong>Example:</strong> To investigate a crime scene:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Intelligence (3) + Investigation (2) = 5 dice
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>/roll pool:5 difficulty:2 comment:Examining the crime scene
+</span></code></pre></div></p>
+<h3 id="attributes-vs-skills">Attributes vs. Skills<a class="headerlink" href="#attributes-vs-skills" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Attributes</strong> - Your raw, innate capabilities (1-5 dots)</li>
+<li><strong>Skills</strong> - Your trained expertise and knowledge (0-5 dots)</li>
+<li><strong>Specialties</strong> - Focused areas of exceptional skill (see <a href="../progression/">Progression</a>)</li>
+</ul>
+<hr />
+<h2 id="the-9-attributes">The 9 Attributes<a class="headerlink" href="#the-9-attributes" title="Permanent link">&para;</a></h2>
+<p>Attributes represent your character's fundamental capabilities. Every character has <strong>9 attributes</strong> across three categories, each rated from <strong>1 to 5 dots</strong>.</p>
+<div class="admonition herald">
+<p class="admonition-title">Attribute Rating Scale</p>
+<ul>
+<li><strong>1 dot</strong> - Poor (below average)</li>
+<li><strong>2 dots</strong> - Average (typical human)</li>
+<li><strong>3 dots</strong> - Good (trained professional)</li>
+<li><strong>4 dots</strong> - Exceptional (among the best)</li>
+<li><strong>5 dots</strong> - Outstanding (peak human performance)</li>
+</ul>
+</div>
+<h3 id="physical-attributes">Physical Attributes<a class="headerlink" href="#physical-attributes" title="Permanent link">&para;</a></h3>
+<p>Physical attributes govern your body's capabilities.</p>
+<h4 id="strength">Strength 💪<a class="headerlink" href="#strength" title="Permanent link">&para;</a></h4>
+<p><strong>Raw physical power and muscle</strong></p>
+<ul>
+<li>Lifting heavy objects</li>
+<li>Breaking down doors</li>
+<li>Hand-to-hand combat damage</li>
+<li>Carrying capacity</li>
+</ul>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/attributes attribute:Strength dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="dexterity">Dexterity 🤸<a class="headerlink" href="#dexterity" title="Permanent link">&para;</a></h4>
+<p><strong>Agility, reflexes, and fine motor control</strong></p>
+<ul>
+<li>Dodging attacks</li>
+<li>Sleight of hand</li>
+<li>Aiming firearms</li>
+<li>Acrobatics and parkour</li>
+</ul>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/attributes attribute:Dexterity dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="stamina">Stamina 🛡️<a class="headerlink" href="#stamina" title="Permanent link">&para;</a></h4>
+<p><strong>Endurance, resilience, and toughness</strong></p>
+<ul>
+<li>Resisting disease and poison</li>
+<li>Long-distance running</li>
+<li>Withstanding damage</li>
+<li>Staying conscious when wounded</li>
+</ul>
+<p><strong>Special:</strong> Stamina determines your <strong>Health</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Health = Stamina + 3
+</span></code></pre></div></p>
+<p>When you increase Stamina, your Health automatically updates in Herald.</p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/attributes attribute:Stamina dots:3
+</span></code></pre></div></p>
+<hr />
+<h3 id="social-attributes">Social Attributes<a class="headerlink" href="#social-attributes" title="Permanent link">&para;</a></h3>
+<p>Social attributes govern your interactions with others.</p>
+<h4 id="charisma">Charisma ✨<a class="headerlink" href="#charisma" title="Permanent link">&para;</a></h4>
+<p><strong>Personal magnetism and charm</strong></p>
+<ul>
+<li>Making good first impressions</li>
+<li>Inspiring others</li>
+<li>Public speaking</li>
+<li>Leading by example</li>
+</ul>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>/attributes attribute:Charisma dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="manipulation">Manipulation 🎭<a class="headerlink" href="#manipulation" title="Permanent link">&para;</a></h4>
+<p><strong>Influence through cunning and persuasion</strong></p>
+<ul>
+<li>Lying convincingly</li>
+<li>Negotiating deals</li>
+<li>Emotional manipulation</li>
+<li>Getting what you want subtly</li>
+</ul>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>/attributes attribute:Manipulation dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="composure">Composure 😌<a class="headerlink" href="#composure" title="Permanent link">&para;</a></h4>
+<p><strong>Emotional control and grace under pressure</strong></p>
+<ul>
+<li>Staying calm in combat</li>
+<li>Resisting intimidation</li>
+<li>Maintaining poker face</li>
+<li>Controlling emotional outbursts</li>
+</ul>
+<p><strong>Special:</strong> Composure contributes to your <strong>Willpower</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Willpower = Resolve + Composure
+</span></code></pre></div></p>
+<p>When you increase Composure, your Willpower automatically updates in Herald.</p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>/attributes attribute:Composure dots:3
+</span></code></pre></div></p>
+<hr />
+<h3 id="mental-attributes">Mental Attributes<a class="headerlink" href="#mental-attributes" title="Permanent link">&para;</a></h3>
+<p>Mental attributes govern your intellectual capabilities.</p>
+<h4 id="intelligence">Intelligence 🧠<a class="headerlink" href="#intelligence" title="Permanent link">&para;</a></h4>
+<p><strong>Reasoning, memory, and analytical ability</strong></p>
+<ul>
+<li>Solving puzzles</li>
+<li>Remembering facts</li>
+<li>Analyzing clues</li>
+<li>Academic knowledge</li>
+</ul>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>/attributes attribute:Intelligence dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="wits">Wits 👁️<a class="headerlink" href="#wits" title="Permanent link">&para;</a></h4>
+<p><strong>Alertness, quick thinking, and instinct</strong></p>
+<ul>
+<li>Noticing ambushes</li>
+<li>Thinking on your feet</li>
+<li>Initiative in combat</li>
+<li>Spotting lies</li>
+</ul>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>/attributes attribute:Wits dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="resolve">Resolve 💎<a class="headerlink" href="#resolve" title="Permanent link">&para;</a></h4>
+<p><strong>Determination, focus, and mental fortitude</strong></p>
+<ul>
+<li>Resisting mental influence</li>
+<li>Maintaining concentration</li>
+<li>Pushing through pain</li>
+<li>Staying on task</li>
+</ul>
+<p><strong>Special:</strong> Resolve contributes to your <strong>Willpower</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Willpower = Resolve + Composure
+</span></code></pre></div></p>
+<p>When you increase Resolve, your Willpower automatically updates in Herald.</p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>/attributes attribute:Resolve dots:3
+</span></code></pre></div></p>
+<hr />
+<h2 id="the-27-skills">The 27 Skills<a class="headerlink" href="#the-27-skills" title="Permanent link">&para;</a></h2>
+<p>Skills represent trained abilities and learned knowledge. Skills range from <strong>0 to 5 dots</strong>, where 0 means untrained.</p>
+<div class="admonition herald">
+<p class="admonition-title">Skill Rating Scale</p>
+<ul>
+<li><strong>0 dots</strong> - Untrained (use attribute alone)</li>
+<li><strong>1 dot</strong> - Novice (basic understanding)</li>
+<li><strong>2 dots</strong> - Practiced (competent professional)</li>
+<li><strong>3 dots</strong> - Expert (highly skilled)</li>
+<li><strong>4 dots</strong> - Master (among the best in your field)</li>
+<li><strong>5 dots</strong> - Legendary (world-class expertise)</li>
+</ul>
+</div>
+<h3 id="physical-skills">Physical Skills<a class="headerlink" href="#physical-skills" title="Permanent link">&para;</a></h3>
+<p>Physical skills cover athletic and manual capabilities.</p>
+<h4 id="athletics">Athletics 🏃<a class="headerlink" href="#athletics" title="Permanent link">&para;</a></h4>
+<p><strong>Running, jumping, climbing, and general fitness</strong></p>
+<p><strong>Common Uses:</strong>
+- Chasing or fleeing from threats
+- Climbing walls or buildings
+- Swimming long distances
+- Parkour and free running</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Dexterity + Athletics (to climb a fence)
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>Stamina + Athletics (to run a marathon)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>/skill_set skill:Athletics dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="brawl">Brawl 👊<a class="headerlink" href="#brawl" title="Permanent link">&para;</a></h4>
+<p><strong>Unarmed combat and hand-to-hand fighting</strong></p>
+<p><strong>Common Uses:</strong>
+- Punching, kicking, grappling
+- Bar fights and street brawls
+- Wrestling and submissions
+- Disarming opponents</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Strength + Brawl (to punch)
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>Dexterity + Brawl (to dodge and counter)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>/skill_set skill:Brawl dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="craft">Craft 🔨<a class="headerlink" href="#craft" title="Permanent link">&para;</a></h4>
+<p><strong>Creating, repairing, and building physical objects</strong></p>
+<p><strong>Common Uses:</strong>
+- Fixing vehicles or equipment
+- Building traps or barriers
+- Creating improvised weapons
+- Repairing damaged items</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Dexterity + Craft (to repair a car)
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>Intelligence + Craft (to design a trap)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>/skill_set skill:Craft dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="driving">Driving 🚗<a class="headerlink" href="#driving" title="Permanent link">&para;</a></h4>
+<p><strong>Operating land vehicles</strong></p>
+<p><strong>Common Uses:</strong>
+- High-speed chases
+- Evasive maneuvers
+- Ramming tactics
+- Off-road navigation</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Dexterity + Driving (to perform a J-turn)
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>Wits + Driving (to react to obstacles)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>/skill_set skill:Driving dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="firearms">Firearms 🔫<a class="headerlink" href="#firearms" title="Permanent link">&para;</a></h4>
+<p><strong>Using guns and ranged weapons</strong></p>
+<p><strong>Common Uses:</strong>
+- Shooting pistols, rifles, shotguns
+- Sniping from distance
+- Maintaining firearms
+- Quick-draw techniques</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>Dexterity + Firearms (to shoot accurately)
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>Wits + Firearms (to quick-draw)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>/skill_set skill:Firearms dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="larceny">Larceny 🔓<a class="headerlink" href="#larceny" title="Permanent link">&para;</a></h4>
+<p><strong>Criminal skills: lockpicking, pickpocketing, security</strong></p>
+<p><strong>Common Uses:</strong>
+- Picking locks
+- Bypassing alarms
+- Hotwiring vehicles
+- Pickpocketing</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>Dexterity + Larceny (to pick a lock)
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>Intelligence + Larceny (to plan a heist)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>/skill_set skill:Larceny dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="melee">Melee ⚔️<a class="headerlink" href="#melee" title="Permanent link">&para;</a></h4>
+<p><strong>Armed close combat with weapons</strong></p>
+<p><strong>Common Uses:</strong>
+- Fighting with knives, clubs, swords
+- Wielding improvised weapons
+- Parrying attacks
+- Weapon maintenance</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Strength + Melee (to strike with a baseball bat)
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>Dexterity + Melee (to parry with a knife)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>/skill_set skill:Melee dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="stealth">Stealth 🥷<a class="headerlink" href="#stealth" title="Permanent link">&para;</a></h4>
+<p><strong>Moving unseen and unheard</strong></p>
+<p><strong>Common Uses:</strong>
+- Sneaking past guards
+- Hiding from enemies
+- Tailing suspects
+- Ambush preparation</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Dexterity + Stealth (to sneak quietly)
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>Wits + Stealth (to find a hiding spot quickly)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>/skill_set skill:Stealth dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="survival">Survival 🏕️<a class="headerlink" href="#survival" title="Permanent link">&para;</a></h4>
+<p><strong>Wilderness skills and tracking</strong></p>
+<p><strong>Common Uses:</strong>
+- Tracking prey
+- Foraging for food
+- Building shelter
+- Navigation without tools
+- Predicting weather</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Wits + Survival (to track footprints)
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>Stamina + Survival (to endure harsh conditions)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>/skill_set skill:Survival dots:2
+</span></code></pre></div></p>
+<hr />
+<h3 id="social-skills">Social Skills<a class="headerlink" href="#social-skills" title="Permanent link">&para;</a></h3>
+<p>Social skills govern interactions with other people.</p>
+<h4 id="animal-ken">Animal Ken 🐕<a class="headerlink" href="#animal-ken" title="Permanent link">&para;</a></h4>
+<p><strong>Understanding and influencing animals</strong></p>
+<p><strong>Common Uses:</strong>
+- Calming aggressive animals
+- Training pets
+- Reading animal behavior
+- Commanding attack dogs</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>Charisma + Animal Ken (to calm a guard dog)
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>Manipulation + Animal Ken (to train an animal)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>/skill_set skill:&quot;Animal Ken&quot; dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="etiquette">Etiquette 🎩<a class="headerlink" href="#etiquette" title="Permanent link">&para;</a></h4>
+<p><strong>Social graces and cultural knowledge</strong></p>
+<p><strong>Common Uses:</strong>
+- Navigating high society
+- Diplomatic negotiations
+- Proper formal behavior
+- Avoiding social faux pas</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>Charisma + Etiquette (to impress at a gala)
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>Intelligence + Etiquette (to know the proper protocol)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>/skill_set skill:Etiquette dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="insight">Insight 👁️‍🗨️<a class="headerlink" href="#insight" title="Permanent link">&para;</a></h4>
+<p><strong>Reading people and detecting lies</strong></p>
+<p><strong>Common Uses:</strong>
+- Spotting lies
+- Reading body language
+- Understanding motivations
+- Sensing hidden emotions</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>Wits + Insight (to detect a lie)
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>Intelligence + Insight (to understand someone&#39;s plan)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>/skill_set skill:Insight dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="intimidation">Intimidation 😠<a class="headerlink" href="#intimidation" title="Permanent link">&para;</a></h4>
+<p><strong>Threats, fear, and coercion</strong></p>
+<p><strong>Common Uses:</strong>
+- Threatening suspects
+- Extracting information
+- Establishing dominance
+- Causing fear</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>Strength + Intimidation (to physically threaten)
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>Manipulation + Intimidation (to subtly unnerve)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>/skill_set skill:Intimidation dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="leadership">Leadership 📣<a class="headerlink" href="#leadership" title="Permanent link">&para;</a></h4>
+<p><strong>Inspiring and commanding others</strong></p>
+<p><strong>Common Uses:</strong>
+- Leading teams
+- Rallying allies in combat
+- Organizing group efforts
+- Maintaining morale</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>Charisma + Leadership (to inspire courage)
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>Presence + Leadership (to command respect)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>/skill_set skill:Leadership dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="performance">Performance 🎭<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h4>
+<p><strong>Acting, music, and entertaining</strong></p>
+<p><strong>Common Uses:</strong>
+- Going undercover
+- Disguises and impersonation
+- Public speaking
+- Artistic performance</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>Charisma + Performance (to give a speech)
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>Manipulation + Performance (to impersonate someone)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>/skill_set skill:Performance dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="persuasion">Persuasion 🗣️<a class="headerlink" href="#persuasion" title="Permanent link">&para;</a></h4>
+<p><strong>Honest convincing and negotiation</strong></p>
+<p><strong>Common Uses:</strong>
+- Convincing people
+- Negotiating deals
+- Making arguments
+- Bargaining</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>Charisma + Persuasion (to convince someone)
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>Manipulation + Persuasion (to negotiate a deal)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>/skill_set skill:Persuasion dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="streetwise">Streetwise 🏙️<a class="headerlink" href="#streetwise" title="Permanent link">&para;</a></h4>
+<p><strong>Urban survival and criminal contacts</strong></p>
+<p><strong>Common Uses:</strong>
+- Finding black market goods
+- Navigating gang territory
+- Gathering street rumors
+- Understanding criminal culture</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>Charisma + Streetwise (to get information from contacts)
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>Wits + Streetwise (to sense danger in bad neighborhoods)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>/skill_set skill:Streetwise dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="subterfuge">Subterfuge 🎭<a class="headerlink" href="#subterfuge" title="Permanent link">&para;</a></h4>
+<p><strong>Deception, lies, and misdirection</strong></p>
+<p><strong>Common Uses:</strong>
+- Lying convincingly
+- Creating alibis
+- Misdirection and distraction
+- Covering tracks</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>Manipulation + Subterfuge (to lie)
+</span><span id="__span-48-2"><a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>Wits + Subterfuge (to improvise a quick lie)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>/skill_set skill:Subterfuge dots:2
+</span></code></pre></div></p>
+<hr />
+<h3 id="mental-skills">Mental Skills<a class="headerlink" href="#mental-skills" title="Permanent link">&para;</a></h3>
+<p>Mental skills represent knowledge and intellectual pursuits.</p>
+<h4 id="academics">Academics 📚<a class="headerlink" href="#academics" title="Permanent link">&para;</a></h4>
+<p><strong>Scholarly knowledge and research</strong></p>
+<p><strong>Common Uses:</strong>
+- Historical knowledge
+- Research and library use
+- Understanding ancient texts
+- Academic credentials</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>Intelligence + Academics (to research a topic)
+</span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a>Resolve + Academics (to focus on tedious research)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>/skill_set skill:Academics dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="awareness">Awareness 👀<a class="headerlink" href="#awareness" title="Permanent link">&para;</a></h4>
+<p><strong>Noticing details and staying alert</strong></p>
+<p><strong>Common Uses:</strong>
+- Spotting ambushes
+- Noticing clues
+- Detecting surveillance
+- Staying vigilant</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>Wits + Awareness (to spot danger)
+</span><span id="__span-52-2"><a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a>Intelligence + Awareness (to analyze a scene)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>/skill_set skill:Awareness dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="finance">Finance 💰<a class="headerlink" href="#finance" title="Permanent link">&para;</a></h4>
+<p><strong>Money, business, and economics</strong></p>
+<p><strong>Common Uses:</strong>
+- Managing money
+- Understanding financial crimes
+- Investing wisely
+- Tracing money trails</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>Intelligence + Finance (to analyze accounts)
+</span><span id="__span-54-2"><a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a>Manipulation + Finance (to negotiate a loan)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>/skill_set skill:Finance dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="investigation">Investigation 🔍<a class="headerlink" href="#investigation" title="Permanent link">&para;</a></h4>
+<p><strong>Gathering clues and solving mysteries</strong></p>
+<p><strong>Common Uses:</strong>
+- Examining crime scenes
+- Following leads
+- Connecting evidence
+- Forensic analysis</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>Intelligence + Investigation (to analyze evidence)
+</span><span id="__span-56-2"><a id="__codelineno-56-2" name="__codelineno-56-2" href="#__codelineno-56-2"></a>Wits + Investigation (to spot a vital clue)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>/skill_set skill:Investigation dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="medicine">Medicine 🏥<a class="headerlink" href="#medicine" title="Permanent link">&para;</a></h4>
+<p><strong>Healthcare and anatomy</strong></p>
+<p><strong>Common Uses:</strong>
+- Treating injuries
+- Diagnosing illness
+- Performing surgery
+- Forensic pathology</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>Intelligence + Medicine (to diagnose)
+</span><span id="__span-58-2"><a id="__codelineno-58-2" name="__codelineno-58-2" href="#__codelineno-58-2"></a>Dexterity + Medicine (to perform surgery)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>/skill_set skill:Medicine dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="occult">Occult 🔮<a class="headerlink" href="#occult" title="Permanent link">&para;</a></h4>
+<p><strong>Supernatural knowledge and lore</strong></p>
+<p><strong>Common Uses:</strong>
+- Identifying supernatural creatures
+- Understanding rituals
+- Knowing monster weaknesses
+- Occult research</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>Intelligence + Occult (to identify a vampire)
+</span><span id="__span-60-2"><a id="__codelineno-60-2" name="__codelineno-60-2" href="#__codelineno-60-2"></a>Wits + Occult (to recall a monster&#39;s weakness)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>/skill_set skill:Occult dots:3
+</span></code></pre></div></p>
+<hr />
+<h4 id="politics">Politics 🏛️<a class="headerlink" href="#politics" title="Permanent link">&para;</a></h4>
+<p><strong>Government, law, and bureaucracy</strong></p>
+<p><strong>Common Uses:</strong>
+- Understanding laws
+- Navigating bureaucracy
+- Political maneuvering
+- Knowing officials</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>Intelligence + Politics (to understand regulations)
+</span><span id="__span-62-2"><a id="__codelineno-62-2" name="__codelineno-62-2" href="#__codelineno-62-2"></a>Manipulation + Politics (to influence an official)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>/skill_set skill:Politics dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="science">Science 🔬<a class="headerlink" href="#science" title="Permanent link">&para;</a></h4>
+<p><strong>Natural sciences and research methods</strong></p>
+<p><strong>Common Uses:</strong>
+- Chemistry and biology
+- Analyzing substances
+- Using lab equipment
+- Scientific methodology</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>Intelligence + Science (to analyze a chemical)
+</span><span id="__span-64-2"><a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a>Dexterity + Science (to conduct an experiment)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a>/skill_set skill:Science dots:2
+</span></code></pre></div></p>
+<hr />
+<h4 id="technology">Technology 💻<a class="headerlink" href="#technology" title="Permanent link">&para;</a></h4>
+<p><strong>Computers, electronics, and modern tech</strong></p>
+<p><strong>Common Uses:</strong>
+- Hacking computers
+- Using surveillance equipment
+- Repairing electronics
+- Digital forensics</p>
+<p><strong>Example Roll:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>Intelligence + Technology (to hack a system)
+</span><span id="__span-66-2"><a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a>Wits + Technology (to quickly bypass security)
+</span></code></pre></div></p>
+<p><strong>Herald Command:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>/skill_set skill:Technology dots:3
+</span></code></pre></div></p>
+<hr />
+<h2 id="using-attributes-skills-together">Using Attributes &amp; Skills Together<a class="headerlink" href="#using-attributes-skills-together" title="Permanent link">&para;</a></h2>
+<h3 id="common-dice-pools">Common Dice Pools<a class="headerlink" href="#common-dice-pools" title="Permanent link">&para;</a></h3>
+<p>Here are typical attribute + skill combinations:</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Dice Pool</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Climb a wall</strong></td>
+<td>Dexterity + Athletics</td>
+<td>3 + 2 = 5 dice</td>
+</tr>
+<tr>
+<td><strong>Punch someone</strong></td>
+<td>Strength + Brawl</td>
+<td>3 + 2 = 5 dice</td>
+</tr>
+<tr>
+<td><strong>Shoot a gun</strong></td>
+<td>Dexterity + Firearms</td>
+<td>3 + 3 = 6 dice</td>
+</tr>
+<tr>
+<td><strong>Pick a lock</strong></td>
+<td>Dexterity + Larceny</td>
+<td>4 + 2 = 6 dice</td>
+</tr>
+<tr>
+<td><strong>Sneak past guards</strong></td>
+<td>Dexterity + Stealth</td>
+<td>3 + 3 = 6 dice</td>
+</tr>
+<tr>
+<td><strong>Spot an ambush</strong></td>
+<td>Wits + Awareness</td>
+<td>3 + 3 = 6 dice</td>
+</tr>
+<tr>
+<td><strong>Convince someone</strong></td>
+<td>Charisma + Persuasion</td>
+<td>3 + 2 = 5 dice</td>
+</tr>
+<tr>
+<td><strong>Lie convincingly</strong></td>
+<td>Manipulation + Subterfuge</td>
+<td>3 + 2 = 5 dice</td>
+</tr>
+<tr>
+<td><strong>Research a topic</strong></td>
+<td>Intelligence + Academics</td>
+<td>3 + 2 = 5 dice</td>
+</tr>
+<tr>
+<td><strong>Examine evidence</strong></td>
+<td>Intelligence + Investigation</td>
+<td>3 + 3 = 6 dice</td>
+</tr>
+</tbody>
+</table>
+<h3 id="attribute-only-rolls">Attribute-Only Rolls<a class="headerlink" href="#attribute-only-rolls" title="Permanent link">&para;</a></h3>
+<p>Sometimes you roll using only an attribute (when no skill applies):</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>/roll pool:3 comment:Raw strength check (Strength only)
+</span></code></pre></div>
+<p>Examples:
+- <strong>Stamina</strong> - Resisting poison
+- <strong>Composure</strong> - Staying calm under fire
+- <strong>Resolve</strong> - Resisting mental influence</p>
+<hr />
+<h2 id="character-creation-tips">Character Creation Tips<a class="headerlink" href="#character-creation-tips" title="Permanent link">&para;</a></h2>
+<h3 id="balanced-characters">Balanced Characters<a class="headerlink" href="#balanced-characters" title="Permanent link">&para;</a></h3>
+<p>A well-rounded Hunter typically has:
+- <strong>One primary attribute</strong> at 3-4 in each category
+- <strong>2-3 favored skills</strong> at 3+ dots
+- <strong>Several supporting skills</strong> at 1-2 dots
+- <strong>Specialties</strong> in your core competencies</p>
+<p><strong>Example Balanced Build:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-69-1"><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a>Physical: Strength 2, Dexterity 3, Stamina 3
+</span><span id="__span-69-2"><a id="__codelineno-69-2" name="__codelineno-69-2" href="#__codelineno-69-2"></a>Social: Charisma 3, Manipulation 2, Composure 2
+</span><span id="__span-69-3"><a id="__codelineno-69-3" name="__codelineno-69-3" href="#__codelineno-69-3"></a>Mental: Intelligence 2, Wits 3, Resolve 2
+</span><span id="__span-69-4"><a id="__codelineno-69-4" name="__codelineno-69-4" href="#__codelineno-69-4"></a>
+</span><span id="__span-69-5"><a id="__codelineno-69-5" name="__codelineno-69-5" href="#__codelineno-69-5"></a>Key Skills: Firearms 3, Awareness 3, Investigation 3
+</span><span id="__span-69-6"><a id="__codelineno-69-6" name="__codelineno-69-6" href="#__codelineno-69-6"></a>Supporting: Athletics 2, Stealth 2, Occult 2
+</span></code></pre></div></p>
+<h3 id="specialized-characters">Specialized Characters<a class="headerlink" href="#specialized-characters" title="Permanent link">&para;</a></h3>
+<p>Focus on excelling in one area:</p>
+<p><strong>Combat Specialist:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-70-1"><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a>Physical: Strength 3, Dexterity 4, Stamina 3
+</span><span id="__span-70-2"><a id="__codelineno-70-2" name="__codelineno-70-2" href="#__codelineno-70-2"></a>Skills: Firearms 4, Athletics 3, Brawl 3, Melee 3
+</span></code></pre></div></p>
+<p><strong>Investigator:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-71-1"><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a>Mental: Intelligence 4, Wits 3, Resolve 2
+</span><span id="__span-71-2"><a id="__codelineno-71-2" name="__codelineno-71-2" href="#__codelineno-71-2"></a>Skills: Investigation 4, Awareness 3, Occult 3, Academics 2
+</span></code></pre></div></p>
+<p><strong>Social Manipulator:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-72-1"><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>Social: Charisma 3, Manipulation 4, Composure 3
+</span><span id="__span-72-2"><a id="__codelineno-72-2" name="__codelineno-72-2" href="#__codelineno-72-2"></a>Skills: Persuasion 3, Subterfuge 3, Insight 3, Streetwise 2
+</span></code></pre></div></p>
+<hr />
+<h2 id="improving-attributes-skills">Improving Attributes &amp; Skills<a class="headerlink" href="#improving-attributes-skills" title="Permanent link">&para;</a></h2>
+<p>You can improve attributes and skills by spending Experience Points (XP):</p>
+<h3 id="costs">Costs<a class="headerlink" href="#costs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Attributes:</strong> New rating × 4 XP</li>
+<li>1→2 = 8 XP</li>
+<li>2→3 = 12 XP</li>
+<li>3→4 = 16 XP</li>
+<li>
+<p>4→5 = 20 XP</p>
+</li>
+<li>
+<p><strong>Skills:</strong> New rating × 2 XP</p>
+</li>
+<li>0→1 = 2 XP</li>
+<li>1→2 = 4 XP</li>
+<li>2→3 = 6 XP</li>
+<li>3→4 = 8 XP</li>
+<li>
+<p>4→5 = 10 XP</p>
+</li>
+<li>
+<p><strong>Specialties:</strong> 3 XP each</p>
+</li>
+</ul>
+<p>See <a href="../progression/">Progression</a> for complete XP rules.</p>
+<h3 id="improving-in-herald">Improving in Herald<a class="headerlink" href="#improving-in-herald" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-73-1"><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a># Check your XP
+</span><span id="__span-73-2"><a id="__codelineno-73-2" name="__codelineno-73-2" href="#__codelineno-73-2"></a>/xp action:view
+</span><span id="__span-73-3"><a id="__codelineno-73-3" name="__codelineno-73-3" href="#__codelineno-73-3"></a>
+</span><span id="__span-73-4"><a id="__codelineno-73-4" name="__codelineno-73-4" href="#__codelineno-73-4"></a># Improve an attribute (costs XP automatically)
+</span><span id="__span-73-5"><a id="__codelineno-73-5" name="__codelineno-73-5" href="#__codelineno-73-5"></a>/attributes attribute:Dexterity dots:4
+</span><span id="__span-73-6"><a id="__codelineno-73-6" name="__codelineno-73-6" href="#__codelineno-73-6"></a>
+</span><span id="__span-73-7"><a id="__codelineno-73-7" name="__codelineno-73-7" href="#__codelineno-73-7"></a># Improve a skill
+</span><span id="__span-73-8"><a id="__codelineno-73-8" name="__codelineno-73-8" href="#__codelineno-73-8"></a>/skill_set skill:Firearms dots:4
+</span><span id="__span-73-9"><a id="__codelineno-73-9" name="__codelineno-73-9" href="#__codelineno-73-9"></a>
+</span><span id="__span-73-10"><a id="__codelineno-73-10" name="__codelineno-73-10" href="#__codelineno-73-10"></a># Add a specialty
+</span><span id="__span-73-11"><a id="__codelineno-73-11" name="__codelineno-73-11" href="#__codelineno-73-11"></a>/specialty action:add skill:Firearms specialty:Pistols
+</span></code></pre></div>
+<hr />
+<h2 id="specialties">Specialties<a class="headerlink" href="#specialties" title="Permanent link">&para;</a></h2>
+<p>Specialties represent focused expertise within a skill. When a specialty applies, you gain bonus dice.</p>
+<h3 id="how-specialties-work">How Specialties Work<a class="headerlink" href="#how-specialties-work" title="Permanent link">&para;</a></h3>
+<ol>
+<li>You can have <strong>multiple specialties per skill</strong></li>
+<li>Maximum specialties per skill = skill dots (minimum 1)</li>
+<li>Specialties provide mechanical bonuses when applicable</li>
+<li>Cost: 3 XP each</li>
+</ol>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-74-1"><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a>Investigation 3 with specialty &quot;Crime Scenes&quot;
+</span><span id="__span-74-2"><a id="__codelineno-74-2" name="__codelineno-74-2" href="#__codelineno-74-2"></a>When investigating crime scenes, add bonus dice
+</span><span id="__span-74-3"><a id="__codelineno-74-3" name="__codelineno-74-3" href="#__codelineno-74-3"></a>
+</span><span id="__span-74-4"><a id="__codelineno-74-4" name="__codelineno-74-4" href="#__codelineno-74-4"></a>Firearms 4 with specialties &quot;Pistols&quot; and &quot;Rifles&quot;
+</span><span id="__span-74-5"><a id="__codelineno-74-5" name="__codelineno-74-5" href="#__codelineno-74-5"></a>When using pistols or rifles specifically, add bonus dice
+</span><span id="__span-74-6"><a id="__codelineno-74-6" name="__codelineno-74-6" href="#__codelineno-74-6"></a>
+</span><span id="__span-74-7"><a id="__codelineno-74-7" name="__codelineno-74-7" href="#__codelineno-74-7"></a>Occult 3 with specialty &quot;Vampire Lore&quot;
+</span><span id="__span-74-8"><a id="__codelineno-74-8" name="__codelineno-74-8" href="#__codelineno-74-8"></a>When dealing with vampire-related occult knowledge, add bonus dice
+</span></code></pre></div>
+<h3 id="managing-specialties-in-herald">Managing Specialties in Herald<a class="headerlink" href="#managing-specialties-in-herald" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-75-1"><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a># View all specialties
+</span><span id="__span-75-2"><a id="__codelineno-75-2" name="__codelineno-75-2" href="#__codelineno-75-2"></a>/specialty action:view
+</span><span id="__span-75-3"><a id="__codelineno-75-3" name="__codelineno-75-3" href="#__codelineno-75-3"></a>
+</span><span id="__span-75-4"><a id="__codelineno-75-4" name="__codelineno-75-4" href="#__codelineno-75-4"></a># Add a specialty (requires skill to have at least 1 dot)
+</span><span id="__span-75-5"><a id="__codelineno-75-5" name="__codelineno-75-5" href="#__codelineno-75-5"></a>/specialty action:add skill:Firearms specialty:Shotguns
+</span><span id="__span-75-6"><a id="__codelineno-75-6" name="__codelineno-75-6" href="#__codelineno-75-6"></a>
+</span><span id="__span-75-7"><a id="__codelineno-75-7" name="__codelineno-75-7" href="#__codelineno-75-7"></a># Remove a specialty
+</span><span id="__span-75-8"><a id="__codelineno-75-8" name="__codelineno-75-8" href="#__codelineno-75-8"></a>/specialty action:remove skill:Firearms specialty:Shotguns
+</span></code></pre></div>
+<hr />
+<h2 id="quick-reference">Quick Reference<a class="headerlink" href="#quick-reference" title="Permanent link">&para;</a></h2>
+<h3 id="all-9-attributes">All 9 Attributes<a class="headerlink" href="#all-9-attributes" title="Permanent link">&para;</a></h3>
+<p><strong>Physical:</strong> Strength, Dexterity, Stamina
+<strong>Social:</strong> Charisma, Manipulation, Composure
+<strong>Mental:</strong> Intelligence, Wits, Resolve</p>
+<p><strong>Derived Stats:</strong>
+- Health = Stamina + 3
+- Willpower = Resolve + Composure</p>
+<h3 id="all-27-skills">All 27 Skills<a class="headerlink" href="#all-27-skills" title="Permanent link">&para;</a></h3>
+<p><strong>Physical (9):</strong>
+Athletics, Brawl, Craft, Driving, Firearms, Larceny, Melee, Stealth, Survival</p>
+<p><strong>Social (9):</strong>
+Animal Ken, Etiquette, Insight, Intimidation, Leadership, Performance, Persuasion, Streetwise, Subterfuge</p>
+<p><strong>Mental (9):</strong>
+Academics, Awareness, Finance, Investigation, Medicine, Occult, Politics, Science, Technology</p>
+<hr />
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="../dice-mechanics/">Dice Mechanics</a></strong> - Learn how to roll your dice pools</li>
+<li><strong><a href="../progression/">Progression</a></strong> - Advance your character with XP</li>
+<li><strong><a href="../creeds/">Creeds</a></strong> - Choose your hunting philosophy</li>
+<li><strong><a href="../edge/">Edge</a></strong> - Unlock supernatural advantages</li>
+</ul>
+<p>Or return to the <a href="../overview/">H5E Overview</a> for the big picture!</p>
+<hr />
+<p>🔸 <strong>Build your Hunter. Define your capabilities.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Understanding H5E">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Understanding H5E
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../dice-mechanics/" class="md-footer__link md-footer__link--next" aria-label="Next: Dice Mechanics">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Dice Mechanics
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Herald Bot - Hunter The Reckoning 5E
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://discord.gg/9bEZk6ARG9" target="_blank" rel="noopener" title="Support Server" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/Mashbybot/herald" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "toc.follow", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

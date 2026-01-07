@@ -1,0 +1,2834 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Advanced Discord bot for Hunter The Reckoning 5th Edition">
+      
+      
+        <meta name="author" content="Herald Bot">
+      
+      
+        <link rel="canonical" href="https://Mashbybot.github.io/herald-docs/guides/advanced/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Advanced Guide - Herald Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#advanced-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Herald Documentation" class="md-header__button md-logo" aria-label="Herald Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.03 6.03 20 7l2-5-5 2 .97.97-1.82 1.82C10.87 2.16 3.3 3.94 2.97 4L2 4.26l.5 1.94.79-.2 6.83 6.82L6.94 16H5l-3 3 2 1 1 2 3-3v-1.94l3.18-3.18L18 20.71l-.19.79 1.93.5.26-.97c.06-.33 1.84-7.9-2.79-13.18zM4.5 5.78c2.05-.28 6.78-.5 10.23 2.43l-3.91 3.91zM18.22 19.5l-6.34-6.32 3.91-3.91c2.93 3.45 2.71 8.18 2.43 10.23"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Herald Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advanced Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Mashbybot/herald" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Mashbybot/herald
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../quickstart/" class="md-tabs__link">
+          
+  
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../character-creation/" class="md-tabs__link">
+          
+  
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../commands/" class="md-tabs__link">
+          
+  
+  
+  Command Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../h5e/overview/" class="md-tabs__link">
+          
+  
+  
+  H5E Integration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../admin/setup/" class="md-tabs__link">
+          
+  
+  
+  Server Administration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../support/faq/" class="md-tabs__link">
+          
+  
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Herald Documentation" class="md-nav__button md-logo" aria-label="Herald Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.03 6.03 20 7l2-5-5 2 .97.97-1.82 1.82C10.87 2.16 3.3 3.94 2.97 4L2 4.26l.5 1.94.79-.2 6.83 6.82L6.94 16H5l-3 3 2 1 1 2 3-3v-1.94l3.18-3.18L18 20.71l-.19.79 1.93.5.26-.97c.06-.33 1.84-7.9-2.79-13.18zM4.5 5.78c2.05-.28 6.78-.5 10.23 2.43l-3.91 3.91zM18.22 19.5l-6.34-6.32 3.91-3.91c2.93 3.45 2.71 8.18 2.43 10.23"/></svg>
+
+    </a>
+    Herald Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Mashbybot/herald" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Mashbybot/herald
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adding-herald/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding Herald
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../first-character/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Character
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-rolling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Rolling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../character-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Character Creation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../character-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Character Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dice-rolling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dice Rolling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edge-desperation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edge & Desperation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skills-specialties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skills & Specialties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experience System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hunter-mechanics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hunter Mechanics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../equipment-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipment & Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Command Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/character/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Character Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/dice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dice Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/hunter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hunter Mechanics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/utility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    H5E Integration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    H5E Integration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../h5e/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Understanding H5E
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../h5e/attributes-skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attributes & Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../h5e/dice-mechanics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dice Mechanics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../h5e/edge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edge System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../h5e/desperation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desperation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../h5e/creeds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creeds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../h5e/progression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Character Progression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Server Administration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Server Administration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/best-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/common-issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/getting-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Character Optimization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Character Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maximizing-dice-pools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maximizing Dice Pools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attribute-priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attribute Priority
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skill-priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skill Priority
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specialty-placement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specialty Placement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derived-stats-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Derived Stats Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edge-synergies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edge Synergies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Edge Synergies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#combat-synergies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combat Synergies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#social-synergies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Social Synergies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#investigation-synergies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Investigation Synergies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-synergies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Synergies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-edge-combos-high-xp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Edge Combos (High XP)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desperation-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desperation Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Desperation Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use-desperation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to Use Desperation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#danger-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Danger Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overreach-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overreach Decisions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#despair-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Despair Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combat-tactics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combat Tactics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Combat Tactics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#action-economy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Action Economy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positioning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focus-fire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Focus Fire
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desperation-in-combat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desperation in Combat
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defensive-tactics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defensive Tactics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#investigation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Investigation Strategies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Investigation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#systematic-searching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Systematic Searching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information-gathering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Gathering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#research-tactics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Research Tactics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Social Manipulation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Social Manipulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reading-people" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading People
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persuasion-vs-intimidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persuasion vs. Intimidation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-stage-social-encounters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Stage Social Encounters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-fame-and-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Fame and Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-character-builds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Character Builds
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multi-Character Builds">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-specialist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Specialist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-generalist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Generalist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-hybrid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Hybrid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimization-quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimization Quick Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimization Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xp-priorities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XP Priorities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dice-pool-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dice Pool Targets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stat-minimums" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stat Minimums
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="advanced-guide">Advanced Guide<a class="headerlink" href="#advanced-guide" title="Permanent link">&para;</a></h1>
+<p>Advanced tactics, optimization strategies, and mastery techniques for experienced Hunter: The Reckoning 5<sup>th</sup> Edition players.</p>
+<p>This guide covers character optimization, Edge synergies, Desperation management, and high-level play.</p>
+<hr />
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#character-optimization">Character Optimization</a></li>
+<li><a href="#edge-synergies">Edge Synergies</a></li>
+<li><a href="#desperation-management">Desperation Management</a></li>
+<li><a href="#combat-tactics">Combat Tactics</a></li>
+<li><a href="#investigation-strategies">Investigation Strategies</a></li>
+<li><a href="#social-manipulation">Social Manipulation</a></li>
+<li><a href="#multi-character-builds">Multi-Character Builds</a></li>
+</ol>
+<hr />
+<h2 id="character-optimization">Character Optimization<a class="headerlink" href="#character-optimization" title="Permanent link">&para;</a></h2>
+<h3 id="maximizing-dice-pools">Maximizing Dice Pools<a class="headerlink" href="#maximizing-dice-pools" title="Permanent link">&para;</a></h3>
+<p><strong>The 8-Dice Threshold:</strong>
+- 8+ dice pools have high success rates
+- Target: Primary attribute 4 + Primary skill 4 = 8 dice
+- Secondary pools: 5-7 dice
+- Tertiary pools: 3-4 dice acceptable</p>
+<p><strong>Optimization path:</strong></p>
+<p><strong>Starting (0 XP):</strong>
+- Dexterity 4, Firearms 4 = 8 dice (shooting)
+- Intelligence 3, Investigation 3 = 6 dice (clues)
+- Manipulation 2, Persuasion 2 = 4 dice (social)</p>
+<p><strong>Early (20 XP):</strong>
+- Raise Firearms to 5 = 9 dice shooting (10 XP)
+- Add 2 specialties (6 XP)
+- Save 4 XP</p>
+<p><strong>Mid (50 XP):</strong>
+- Raise Dexterity to 5 = 10 dice shooting (20 XP)
+- Raise Investigation to 4 = 7 dice investigating (8 XP)
+- Buy second Edge (15 XP)
+- Remaining: 7 XP</p>
+<h3 id="attribute-priority">Attribute Priority<a class="headerlink" href="#attribute-priority" title="Permanent link">&para;</a></h3>
+<p><strong>Combat character:</strong>
+1. <strong>Dexterity 4-5</strong> (hit targets)
+2. <strong>Stamina 3-4</strong> (survive hits)
+3. <strong>Wits 3</strong> (initiative)
+4. <strong>Composure/Resolve 2-3 each</strong> (Willpower 4-6)</p>
+<p><strong>Social character:</strong>
+1. <strong>Charisma or Manipulation 4-5</strong> (influence)
+2. <strong>Composure 3-4</strong> (resist pressure)
+3. <strong>Wits or Intelligence 3</strong> (read situations)
+4. <strong>Dexterity 2</strong> (minimum combat capability)</p>
+<p><strong>Investigation character:</strong>
+1. <strong>Intelligence 4-5</strong> (analyze)
+2. <strong>Wits 4</strong> (notice and act fast)
+3. <strong>Composure 3</strong> (Willpower for mental resistance)
+4. <strong>Dexterity 3</strong> (basic combat)</p>
+<h3 id="skill-priority">Skill Priority<a class="headerlink" href="#skill-priority" title="Permanent link">&para;</a></h3>
+<p><strong>Essential skills (everyone):</strong>
+- <strong>Awareness 3</strong> - Spot threats and clues
+- <strong>Athletics 2</strong> - Dodge and maneuver
+- <strong>One combat skill 3-4</strong> - Survive fights</p>
+<p><strong>Combat specialists:</strong>
+- <strong>Firearms 4-5</strong> or <strong>Melee 4-5</strong>
+- <strong>Athletics 3</strong> - Dodge
+- <strong>Stealth 2-3</strong> - Positioning</p>
+<p><strong>Social specialists:</strong>
+- <strong>Persuasion or Intimidation 4-5</strong>
+- <strong>Insight 3</strong> - Read people
+- <strong>Subterfuge 3</strong> - Deception</p>
+<p><strong>Investigation specialists:</strong>
+- <strong>Investigation 4-5</strong>
+- <strong>Occult 3-4</strong>
+- <strong>Awareness 4</strong></p>
+<h3 id="specialty-placement">Specialty Placement<a class="headerlink" href="#specialty-placement" title="Permanent link">&para;</a></h3>
+<p><strong>Priority order:</strong>
+1. <strong>Primary attack skill</strong> (Firearms, Melee, Brawl)
+2. <strong>Primary investigation skill</strong> (Investigation, Occult, Awareness)
+3. <strong>Primary social skill</strong> (Persuasion, Subterfuge, Insight)</p>
+<p><strong>Avoid:</strong>
+- Specialties on skills with only 1 dot
+- Specialties too broad to apply often
+- Duplicate specialty types</p>
+<h3 id="derived-stats-optimization">Derived Stats Optimization<a class="headerlink" href="#derived-stats-optimization" title="Permanent link">&para;</a></h3>
+<p><strong>Health = Stamina + 3:</strong>
+- Minimum: 5 (Stamina 2)
+- Recommended: 6 (Stamina 3)
+- Optimal: 7+ (Stamina 4-5)</p>
+<p><strong>Willpower = Composure + Resolve:</strong>
+- Minimum: 4 (2 + 2)
+- Recommended: 5 (3 + 2 or 2 + 3)
+- Optimal: 6+ (3 + 3 or 4 + 2)</p>
+<hr />
+<h2 id="edge-synergies">Edge Synergies<a class="headerlink" href="#edge-synergies" title="Permanent link">&para;</a></h2>
+<h3 id="combat-synergies">Combat Synergies<a class="headerlink" href="#combat-synergies" title="Permanent link">&para;</a></h3>
+<p><strong>Arsenal + Avenger:</strong>
+- Heavy armament
+- Vengeance-driven warrior
+- Always armed and ready
+- <strong>Best skills:</strong> Firearms 5, Athletics 3, Intimidation 3</p>
+<p><strong>Fleet + Defender:</strong>
+- Mobile protector
+- Rapid response
+- Superior positioning
+- <strong>Best skills:</strong> Melee 4, Athletics 4, Awareness 3</p>
+<p><strong>Senses + Any combat Creed:</strong>
+- Never surprised
+- Enhanced awareness in fights
+- Spot ambushes
+- <strong>Best skills:</strong> Awareness 5, Firearms 4, Investigation 3</p>
+<h3 id="social-synergies">Social Synergies<a class="headerlink" href="#social-synergies" title="Permanent link">&para;</a></h3>
+<p><strong>Contacts + Defender:</strong>
+- Community network
+- Information hub
+- Social protection
+- <strong>Best skills:</strong> Persuasion 4, Insight 4, Streetwise 3</p>
+<p><strong>Fame + Redeemer:</strong>
+- Public influence
+- Leverage celebrity
+- Redemption through visibility
+- <strong>Best skills:</strong> Persuasion 5, Performance 4, Leadership 3</p>
+<p><strong>Status + Zealot:</strong>
+- Institutional authority
+- Command structure
+- Organized crusade
+- <strong>Best skills:</strong> Leadership 4, Intimidation 4, Politics 3</p>
+<h3 id="investigation-synergies">Investigation Synergies<a class="headerlink" href="#investigation-synergies" title="Permanent link">&para;</a></h3>
+<p><strong>Library + Innocent:</strong>
+- Research-driven discovery
+- Knowledge accumulation
+- Understanding the supernatural
+- <strong>Best skills:</strong> Investigation 5, Academics 4, Occult 4</p>
+<p><strong>Third Eye + Any Creed:</strong>
+- See supernatural truth
+- Identify threats instantly
+- Mystical perception
+- <strong>Best skills:</strong> Awareness 4, Occult 4, Investigation 3</p>
+<p><strong>Global Access + Defender:</strong>
+- Information network
+- Track threats globally
+- Protect proactively
+- <strong>Best skills:</strong> Investigation 4, Technology 4, Awareness 3</p>
+<h3 id="support-synergies">Support Synergies<a class="headerlink" href="#support-synergies" title="Permanent link">&para;</a></h3>
+<p><strong>Martyr + Defender:</strong>
+- Protect through sacrifice
+- Tank damage for allies
+- Ultimate guardian
+- <strong>Best skills:</strong> Medicine 4, Athletics 3, Composure 4</p>
+<p><strong>Inspire + Any combat Creed:</strong>
+- Leadership in battle
+- Buff allies
+- Force multiplier
+- <strong>Best skills:</strong> Leadership 5, Firearms 4, Charisma 4</p>
+<p><strong>Benediction + Redeemer:</strong>
+- Divine healing
+- Spiritual protection
+- Redemptive power
+- <strong>Best skills:</strong> Medicine 4, Persuasion 3, Composure 4</p>
+<h3 id="multi-edge-combos-high-xp">Multi-Edge Combos (High XP)<a class="headerlink" href="#multi-edge-combos-high-xp" title="Permanent link">&para;</a></h3>
+<p><strong>Arsenal + Fleet:</strong>
+- Mobile heavy weapons platform
+- Hit-and-run tactics
+- Superior firepower + positioning</p>
+<p><strong>Contacts + Library:</strong>
+- Information dominance
+- Human and textual sources
+- Know everything</p>
+<p><strong>Senses + Third Eye:</strong>
+- Ultimate perception
+- See both mundane and supernatural
+- Nothing escapes notice</p>
+<p><strong>Inspire + Martyr:</strong>
+- Ultimate support
+- Buff and protect team
+- Battlefield leadership</p>
+<hr />
+<h2 id="desperation-management">Desperation Management<a class="headerlink" href="#desperation-management" title="Permanent link">&para;</a></h2>
+<h3 id="when-to-use-desperation">When to Use Desperation<a class="headerlink" href="#when-to-use-desperation" title="Permanent link">&para;</a></h3>
+<p><strong>Always use when:</strong>
+- Character death is imminent
+- Ally is dying
+- Mission-critical roll (one chance)
+- Final confrontation with major threat</p>
+<p><strong>Usually use when:</strong>
+- Danger is low (0-3)
+- Success is very important
+- Failure has severe consequences
+- Storyteller hints it's needed</p>
+<p><strong>Rarely use when:</strong>
+- Danger is high (7-10)
+- Roll is not critical
+- Other options exist
+- You're already in Despair</p>
+<p><strong>Never use when:</strong>
+- Routine tasks
+- Low-stakes situations
+- You can afford to fail
+- Risk of Despair &gt; reward</p>
+<h3 id="danger-management">Danger Management<a class="headerlink" href="#danger-management" title="Permanent link">&para;</a></h3>
+<p><strong>Keep Danger low:</strong>
+- Rest and downtime (-1 per session)
+- Complete Redemption paths
+- Avoid unnecessary Desperation use
+- Ask Storyteller for Danger reduction opportunities</p>
+<p><strong>Monitor thresholds:</strong>
+- <strong>0-3:</strong> Safe to use Desperation
+- <strong>4-6:</strong> Caution advised
+- <strong>7-9:</strong> High risk
+- <strong>10:</strong> Extreme danger</p>
+<p><strong>Danger reduction tactics:</strong>
+- Narrative downtime between arcs
+- Completing personal storylines
+- Redemption paths
+- Storyteller rewards</p>
+<h3 id="overreach-decisions">Overreach Decisions<a class="headerlink" href="#overreach-decisions" title="Permanent link">&para;</a></h3>
+<p><strong>When you Overreach (Success + Desperation 1s):</strong></p>
+<p><strong>Choose success when:</strong>
+- You can handle the Danger increase
+- Success is worth the cost
+- You're at low Danger already
+- Mission success &gt; personal safety</p>
+<p><strong>Choose Despair when:</strong>
+- Danger is already high (8+)
+- Failure advances character story
+- Redemption path is interesting
+- You want dramatic character moment</p>
+<p><strong>Example:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Danger 2, roll 6 successes, 2 Desperation 1s
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Choose: Keep 6 successes + gain Danger 2 (total Danger 4)
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Reason: Danger 4 is still safe, success is critical
+</span></code></pre></div></p>
+<h3 id="despair-strategy">Despair Strategy<a class="headerlink" href="#despair-strategy" title="Permanent link">&para;</a></h3>
+<p><strong>Embrace Despair narratively:</strong>
+- Don't avoid it out of fear
+- It's a feature, not a punishment
+- Creates great character moments
+- Drives personal stories</p>
+<p><strong>Plan Redemption:</strong>
+- Work with Storyteller
+- Tie to your Drive
+- Make it meaningful
+- Use it to advance character arc</p>
+<p><strong>Redemption examples:</strong></p>
+<p><strong>Vengeance Drive in Despair:</strong>
+- Redemption: Hunt down and hurt your quarry
+- Approach: 1-2 session mini-arc
+- Completion: Dramatic confrontation</p>
+<p><strong>Virtue Drive in Despair:</strong>
+- Redemption: Uphold morals despite darkness
+- Approach: Moral dilemma, choose right path
+- Completion: Resist temptation</p>
+<hr />
+<h2 id="combat-tactics">Combat Tactics<a class="headerlink" href="#combat-tactics" title="Permanent link">&para;</a></h2>
+<h3 id="action-economy">Action Economy<a class="headerlink" href="#action-economy" title="Permanent link">&para;</a></h3>
+<p><strong>Maximize effectiveness per turn:</strong>
+- Attack with highest pool
+- Position for next turn
+- Coordinate with allies
+- Don't waste actions on low-probability moves</p>
+<h3 id="positioning">Positioning<a class="headerlink" href="#positioning" title="Permanent link">&para;</a></h3>
+<p><strong>Use environment:</strong>
+- Cover: Increases difficulty to hit you
+- High ground: Bonus to attack
+- Choke points: Limit enemy movement
+- Escape routes: Always have one</p>
+<p><strong>Describe tactics:</strong>
+- "I take cover behind the car" = +1 difficulty to hit you
+- "I flank while they're distracted" = -1 difficulty to hit
+- "I climb to the roof" = high ground advantage</p>
+<h3 id="focus-fire">Focus Fire<a class="headerlink" href="#focus-fire" title="Permanent link">&para;</a></h3>
+<p><strong>Concentrate attacks:</strong>
+- All Hunters attack one target
+- Eliminate threats quickly
+- Reduces enemy action economy
+- Protects wounded allies</p>
+<p><strong>Priority targets:</strong>
+1. <strong>Healers/support</strong> - Eliminate first
+2. <strong>High damage dealers</strong> - Remove threats
+3. <strong>Weak enemies</strong> - Easy kills
+4. <strong>Leaders</strong> - Disrupt coordination</p>
+<h3 id="desperation-in-combat">Desperation in Combat<a class="headerlink" href="#desperation-in-combat" title="Permanent link">&para;</a></h3>
+<p><strong>Critical moments:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/roll pool:8 difficulty:4 desperate:true comment:Killing blow on vampire lord
+</span></code></pre></div></p>
+<p><strong>Don't waste on:</strong>
+- Minions
+- Early fight rounds
+- When allies can succeed
+- If you're at high Danger</p>
+<h3 id="defensive-tactics">Defensive Tactics<a class="headerlink" href="#defensive-tactics" title="Permanent link">&para;</a></h3>
+<p><strong>Dodge vs. Tank:</strong>
+- <strong>Dodge:</strong> Dexterity + Athletics (avoid damage)
+- <strong>Tank:</strong> Stamina + Resolve (absorb damage)
+- High Dex = dodge
+- High Stamina = tank</p>
+<p><strong>When to retreat:</strong>
+- Health below 3
+- Willpower depleted
+- Allies down
+- Outnumbered 3-to-1 or more</p>
+<hr />
+<h2 id="investigation-strategies">Investigation Strategies<a class="headerlink" href="#investigation-strategies" title="Permanent link">&para;</a></h2>
+<h3 id="systematic-searching">Systematic Searching<a class="headerlink" href="#systematic-searching" title="Permanent link">&para;</a></h3>
+<p><strong>Layer your investigation:</strong></p>
+<p><strong>Layer 1: Quick scan</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/roll pool:5 difficulty:2 comment:Initial look around
+</span></code></pre></div>
+(Wits + Awareness)</p>
+<p><strong>Layer 2: Detailed search</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/roll pool:7 difficulty:2 comment:Thorough investigation
+</span></code></pre></div>
+(Intelligence + Investigation)</p>
+<p><strong>Layer 3: Specialist knowledge</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/roll pool:6 difficulty:3 comment:Occult analysis
+</span></code></pre></div>
+(Intelligence + Occult)</p>
+<p><strong>Layer 4: Follow up</strong>
+- Track leads from previous rolls
+- Interview witnesses
+- Research findings</p>
+<h3 id="information-gathering">Information Gathering<a class="headerlink" href="#information-gathering" title="Permanent link">&para;</a></h3>
+<p><strong>Diverse sources:</strong>
+- <strong>Physical evidence:</strong> Investigation rolls
+- <strong>Witnesses:</strong> Social rolls (Persuasion, Intimidation)
+- <strong>Research:</strong> Academics, Occult rolls
+- <strong>Networks:</strong> Use Contacts Edge
+- <strong>Technology:</strong> Technology skill for hacking/research</p>
+<h3 id="research-tactics">Research Tactics<a class="headerlink" href="#research-tactics" title="Permanent link">&para;</a></h3>
+<p><strong>Library Edge optimization:</strong>
+- Focus on obscure knowledge
+- Leverage +2 dice on research
+- Cross-reference sources
+- Find patterns</p>
+<p><strong>Occult research:</strong>
+- Identify creature types
+- Find weaknesses
+- Understand rituals
+- Prevent supernatural events</p>
+<hr />
+<h2 id="social-manipulation">Social Manipulation<a class="headerlink" href="#social-manipulation" title="Permanent link">&para;</a></h2>
+<h3 id="reading-people">Reading People<a class="headerlink" href="#reading-people" title="Permanent link">&para;</a></h3>
+<p><strong>Always open with Insight:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/roll pool:5 difficulty:2 comment:Reading their demeanor
+</span></code></pre></div></p>
+<p><strong>Learn:</strong>
+- Emotional state
+- Motivations
+- Hidden agendas
+- Weaknesses</p>
+<h3 id="persuasion-vs-intimidation">Persuasion vs. Intimidation<a class="headerlink" href="#persuasion-vs-intimidation" title="Permanent link">&para;</a></h3>
+<p><strong>Use Persuasion when:</strong>
+- Target is neutral or friendly
+- You need cooperation
+- Long-term relationship matters
+- Subtlety is required</p>
+<p><strong>Use Intimidation when:</strong>
+- Target is hostile
+- Quick compliance needed
+- Relationship doesn't matter
+- Show of force is appropriate</p>
+<h3 id="multi-stage-social-encounters">Multi-Stage Social Encounters<a class="headerlink" href="#multi-stage-social-encounters" title="Permanent link">&para;</a></h3>
+<p><strong>Stage 1: Establish rapport</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>/roll pool:6 difficulty:2 comment:Building trust
+</span></code></pre></div>
+(Charisma + Persuasion)</p>
+<p><strong>Stage 2: Probe for information</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>/roll pool:5 difficulty:2 comment:Subtle questioning
+</span></code></pre></div>
+(Manipulation + Subterfuge)</p>
+<p><strong>Stage 3: Read response</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>/roll pool:5 difficulty:3 comment:Detecting lies
+</span></code></pre></div>
+(Wits + Insight)</p>
+<p><strong>Stage 4: Close the deal</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>/roll pool:7 difficulty:3 comment:Securing cooperation
+</span></code></pre></div>
+(Manipulation + Persuasion)</p>
+<h3 id="using-fame-and-status">Using Fame and Status<a class="headerlink" href="#using-fame-and-status" title="Permanent link">&para;</a></h3>
+<p><strong>Fame tactics:</strong>
+- Leverage public recognition
+- Manipulate media
+- Access exclusive areas
+- Influence public opinion</p>
+<p><strong>Status tactics:</strong>
+- Exercise authority
+- Command subordinates
+- Bypass bureaucracy
+- Intimidate through position</p>
+<hr />
+<h2 id="multi-character-builds">Multi-Character Builds<a class="headerlink" href="#multi-character-builds" title="Permanent link">&para;</a></h2>
+<h3 id="the-specialist">The Specialist<a class="headerlink" href="#the-specialist" title="Permanent link">&para;</a></h3>
+<p><strong>Philosophy:</strong> Master one thing completely</p>
+<p><strong>Example: Sniper</strong>
+- Dexterity 5, Firearms 5 = 10 dice
+- Specialties: Firearms (Rifles), Firearms (Long Range), Awareness (Spotting)
+- Edge: Arsenal (always have perfect weapon)
+- Role: Long-range elimination</p>
+<p><strong>Strengths:</strong>
+- Unmatched at primary role
+- Reliable specialist</p>
+<p><strong>Weaknesses:</strong>
+- Vulnerable outside specialty
+- Party dependent</p>
+<h3 id="the-generalist">The Generalist<a class="headerlink" href="#the-generalist" title="Permanent link">&para;</a></h3>
+<p><strong>Philosophy:</strong> Contribute to everything</p>
+<p><strong>Example: Jack-of-All-Trades</strong>
+- Balanced attributes (3s and 2s)
+- Many skills at 2-3
+- Edge: Scrounger or Fleet
+- Role: Fill gaps, backup everyone</p>
+<p><strong>Strengths:</strong>
+- Adaptable
+- Never useless</p>
+<p><strong>Weaknesses:</strong>
+- Never best at anything
+- Slower progression</p>
+<h3 id="the-hybrid">The Hybrid<a class="headerlink" href="#the-hybrid" title="Permanent link">&para;</a></h3>
+<p><strong>Philosophy:</strong> Excel at two areas</p>
+<p><strong>Example: Combat Investigator</strong>
+- Dexterity 4, Intelligence 4
+- Firearms 4, Investigation 4
+- Edge: Senses
+- Role: Investigate, then eliminate</p>
+<p><strong>Strengths:</strong>
+- Versatile in two areas
+- Valuable in most scenes</p>
+<p><strong>Weaknesses:</strong>
+- Split XP investment
+- Slower mastery</p>
+<h3 id="the-support">The Support<a class="headerlink" href="#the-support" title="Permanent link">&para;</a></h3>
+<p><strong>Philosophy:</strong> Make others better</p>
+<p><strong>Example: Team Leader</strong>
+- Charisma 5, Composure 4
+- Leadership 5, Medicine 3, Inspire Edge
+- Role: Buff allies, heal, coordinate</p>
+<p><strong>Strengths:</strong>
+- Force multiplier
+- Team survivability</p>
+<p><strong>Weaknesses:</strong>
+- Low personal power
+- Depends on team</p>
+<hr />
+<h2 id="optimization-quick-reference">Optimization Quick Reference<a class="headerlink" href="#optimization-quick-reference" title="Permanent link">&para;</a></h2>
+<h3 id="xp-priorities">XP Priorities<a class="headerlink" href="#xp-priorities" title="Permanent link">&para;</a></h3>
+<p><strong>0-20 XP:</strong>
+1. Raise primary skill to 4 (8 XP)
+2. Buy 2-3 specialties (6-9 XP)
+3. Save remainder</p>
+<p><strong>21-50 XP:</strong>
+1. Raise primary attribute to 5 (20 XP)
+2. Raise primary skill to 5 (10 XP)
+3. Buy second Edge (15-20 XP)</p>
+<p><strong>51-100 XP:</strong>
+1. Raise secondary attributes to 4 (12-16 XP each)
+2. Raise secondary skills to 4 (8 XP each)
+3. Buy Perks (5-10 XP each)</p>
+<h3 id="dice-pool-targets">Dice Pool Targets<a class="headerlink" href="#dice-pool-targets" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Primary:</strong> 8-10 dice</li>
+<li><strong>Secondary:</strong> 5-7 dice</li>
+<li><strong>Tertiary:</strong> 3-4 dice</li>
+<li><strong>Minimum:</strong> 3 dice (don't roll less)</li>
+</ul>
+<h3 id="stat-minimums">Stat Minimums<a class="headerlink" href="#stat-minimums" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Health:</strong> 5+ (Stamina 2+)</li>
+<li><strong>Willpower:</strong> 4+ (Composure + Resolve = 4+)</li>
+<li><strong>Primary attribute:</strong> 4 minimum</li>
+<li><strong>Primary skill:</strong> 4 minimum</li>
+<li><strong>Awareness:</strong> 2 minimum</li>
+<li><strong>Combat skill:</strong> 2 minimum</li>
+</ul>
+<hr />
+<h2 id="related-documentation">Related Documentation<a class="headerlink" href="#related-documentation" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="../character-creation/">Character Creation</a></strong> - Building foundations</li>
+<li><strong><a href="../playing/">Playing Guide</a></strong> - Session gameplay</li>
+<li><strong><a href="../../h5e/progression/">Progression</a></strong> - XP and advancement</li>
+<li><strong><a href="../../h5e/edge/">Edge System</a></strong> - All 17 Edges</li>
+<li><strong><a href="../../h5e/desperation/">Desperation</a></strong> - Complete Desperation rules</li>
+<li><strong><a href="../../h5e/dice-mechanics/">Dice Mechanics</a></strong> - Success probability</li>
+</ul>
+<hr />
+<p>🔸 <strong>Master the mechanics. Optimize your Hunter. Dominate the Hunt.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Herald Bot - Hunter The Reckoning 5E
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://discord.gg/9bEZk6ARG9" target="_blank" rel="noopener" title="Support Server" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/Mashbybot/herald" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "toc.follow", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
